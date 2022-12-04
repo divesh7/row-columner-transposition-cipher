@@ -1,0 +1,225 @@
+section{
+    color: white;
+    top: 0;
+    z-index: 1;
+}
+/* style for title of each cipher page */
+.title{
+    background-color: #f0f4be;
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-shadow: 3px 3px rgb(3, 21, 42, 0.3);
+    color: rgb(3, 21, 42);
+}
+.inOut{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+textarea{
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 4px outset rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+    border-radius: 15px;
+    width: 90%;
+    outline: none;
+    background-color:rgb(1, 37, 78);
+    height: 200px;
+    box-shadow:20px 20px 50px 10px rgb(8, 8, 8) inset;
+    display: inline-block; 
+}
+/* style for all buttons in the project */
+.polyButton{
+    outline: none;
+    background: rgb(15, 215, 250);
+    color: rgb(8, 8, 8);
+    border-radius: 5px;
+    height: 45px;
+    width: 150px;
+    text-align: center;
+    font-size: 20px;
+    display: inline-block;
+    border: 2px solid rgb(8, 8, 8);
+    transition-duration: 0.3s;
+    font-weight: bold;
+    box-shadow:2px 2px 5px 1px rgb(2, 92, 99) inset;
+}
+    
+/* hover effect for button */
+.polyButton:hover{   
+    transform: scale(1.1);
+}
+    
+/* acrive effect for button */
+.polyButton:active{
+    box-shadow: none;
+}
+input{
+    color: rgb(10, 10, 10);
+    background-color: white;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    border: 2px solid rgba(7, 7, 7, 0.979);
+    width: 300px;
+    padding: 5px;
+}
+/* information button */
+#information{
+    position: fixed;
+    float: left;
+    bottom: 5%;
+    left:1%;
+    width: 300px;
+    border: none;
+    height: 45px;
+    text-align: center;
+    font-size: 18px;
+    background-color: rgb(7, 2, 56);
+    color: blanchedalmond;
+    border-radius: 2rem;
+}
+#instructions{
+    position: fixed;
+    right: 1%;
+    bottom: 5%;
+    width: 300px;
+    border: none;
+    height: 45px;
+    text-align: center;
+    background-color: rgb(7, 2, 56);
+    color: blanchedalmond;
+    border-radius: 2rem;
+    font-size: 18px;
+}
+#myinformation{
+    width: 50px;
+}
+    
+    
+    
+#myinformation{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    /* Location of the box */
+    left: 0;
+    top: 0;
+/* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    animation-name: example;
+    animation-duration: 1s;  
+    color: black;
+    animation-fill-mode: both;
+    text-align: left;
+}
+    
+#myinstructions{
+
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    /* Location of the box */
+    right: 0;
+    top: 0;
+    /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    animation-name: example1;
+    animation-duration: 1s;  
+    animation-fill-mode: both;
+    text-align: left;
+    color: black;
+}
+@keyframes example {
+    from {top:170px; sbackground-color: rgb(30, 1, 97); width: 0%;border-top-right-radius: 15px; border: 3px solid black; }
+    to {top: 170px; background-color: rgb(144, 226, 247);width: 550px;border-top-right-radius: 15px;border-bottom-right-radius:15px; border: 3px solid black;}
+}
+@keyframes example1 {
+    from {top: 170px; background-color: rgb(30, 1, 97); width: 0%;border-top-left-radius: 15px; border: 3px solid black; }
+    to {top: 170px; background-color: rgb(152, 232, 252);width: 550px;border-top-left-radius: 15px;border-bottom-left-radius:15px; border: 3px solid black;}
+}
+.information-content{
+    top: 0%;
+}
+div#myinstructions.instructions_content{
+    padding: 10px 10px 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+div#myinformation.information_content{
+    padding: 10px 10px 10px;
+    width: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+
+}
+.navPills{
+    color: rgb(7, 2, 56);
+}
+.detail{
+    color: rgb(7, 2, 56) ;
+    position: fixed;
+    
+}
+.detail ul{
+    list-style: none;
+    outline: none;
+    background: rgb(15, 215, 250);
+    color: rgb(8, 8, 8);
+    border-radius: 5px;
+    height: 125px;
+    border: 2px solid rgb(8, 8, 8);
+    font-weight: bold;
+}
+.stuname{
+    position: fixed;
+    right: 40%;
+    bottom: 15%;
+    width: 350px;
+    font-size: large;
+}
+.sturoll{
+    position: fixed;
+    right: 40%;
+    bottom: 15%;
+    width: 100px;
+    font-size:large;
+}
+#answer{
+    position: fixed;
+    right: 1%;
+    bottom: 5%;
+    width: 300px;
+    border: none;
+    height: 45px;
+    text-align: center;
+    background-color: rgb(7, 2, 56);
+    color: blanchedalmond;
+    border-radius: 2rem;
+    font-size: 18px;
+}
+div#myanswer.answer_content{
+    padding: 10px 10px 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+#myanswer{
+
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    /* Location of the box */
+    right: 0;
+    top: 0;
+    /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    animation-name: example1;
+    animation-duration: 1s;  
+    animation-fill-mode: both;
+    text-align: left;
+    color: black;
+}
